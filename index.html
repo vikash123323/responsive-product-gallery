@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Product Gallery | Securozen</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Product Gallery</h1>
+            <p>Explore our collection of amazing products</p>
+        </div>
+    </header>
+
+
+    <!-- Search and Filters -->
+    <section class="controls">
+        <div class="container">
+
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search products..."
+                >
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-category="electronics">
+                    Electronics
+                </button>
+
+                <button class="filter-btn" data-category="fashion">
+                    Fashion
+                </button>
+
+                <button class="filter-btn" data-category="accessories">
+                    Accessories
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Product Gallery -->
+    <main class="container">
+
+        <div id="productGrid" class="product-grid">
+
+            <!-- Products will come from JavaScript -->
+
+        </div>
+
+        <p id="noProducts" class="no-products">
+            No products found.
+        </p>
+
+    </main>
+
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+
+        <button id="closeBtn" class="close-btn">
+            &times;
+        </button>
+
+        <button id="prevBtn" class="nav-btn prev">
+            &#10094;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightboxImage" src="" alt="Product">
+
+            <h2 id="lightboxTitle"></h2>
+
+            <p id="lightboxPrice"></p>
+
+        </div>
+
+        <button id="nextBtn" class="nav-btn next">
+            &#10095;
+        </button>
+
+    </div>
+
+
+    <footer class="footer">
+        <p>
+            © 2026 Responsive Product Gallery | Securozen
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
